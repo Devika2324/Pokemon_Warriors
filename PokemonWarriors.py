@@ -46,12 +46,12 @@ def game():
             while opponent_pokemon['id'] not in selected_pokemon:
                 selected_pokemon.append(opponent_pokemon['id'])
                 break
-        stat_choice = input(f'{player_turn}, which stat do you want to compare (id, height, weight or attack)?: ')
+        stat_choice = input(f'{player_turn}, which stat do you want to compare (height, weight or attack)?: ')
 
-        while stat_choice not in ['id', 'height', 'weight', 'attack']:
-            stat_choice = input(f'{player_turn}, please type a valid stat (id, height, weight or attack): ')
+        while stat_choice not in ['height', 'weight', 'attack']:
+            stat_choice = input(f'{player_turn}, please type a valid stat (height, weight or attack): ')
 
-        if stat_choice in ['id', 'height', 'weight', 'attack']:
+        if stat_choice in ['height', 'weight', 'attack']:
             current_player_stat = current_player_pokemon[stat_choice]
             print("Current player's pokemon: {}, stat {}".format(current_player_pokemon['name'], current_player_stat))
             opponent_stat = opponent_pokemon[stat_choice]
