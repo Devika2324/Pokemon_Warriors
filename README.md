@@ -17,13 +17,13 @@ Here's a brief overview of how the game works:
 To implement the game, the following required tasks were undertaken:
 1. Generating a random number between 1 and 151 to use as the Pokemon ID.
 2. Utilizing the Pokemon API to retrieve a Pokemon based on its ID.
-3. Creating a dictionary containing the Pokemon's name, ID, height, and weight.
+3. Creating a dictionary containing the Pokemon's name, ID, height and weight.
 4. Getting random Pokemon for the player and their opponent.
-5. Prompting the user to select a stat (ID, height, or weight).
+5. Prompting the user to select a stat (height or weight).
 6. Comparing the player's and opponent's Pokemon based on the chosen stat to determine the winner.
 
 Several extensions were applied to enhance the gameplay experience:
-1. Added 'attack' to the Pokemon stats alongside height, weight, and ID.
+1. Added 'attack' to the Pokemon stats alongside height and weight.
 2. Implemented a for loop for multiple rounds of the game (5 rounds).
 3. Added a check to prevent the same Pokemon from being compared again.
 4. Prompted the user to input a valid stat when an invalid stat is selected until a valid one is chosen.
